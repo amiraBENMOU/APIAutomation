@@ -1,10 +1,33 @@
 # 🎧 Spotify API Automation Project
 
-	**This project is a Node.js-based test automation suite that interacts with the Spotify Web API using the Authorization Code Flow. It includes public and authenticated API tests, using Jest for testing and Axios for HTTP requests. **
+	This project is a Node.js-based test automation suite that interacts with the Spotify Web API using the Authorization Code Flow. It includes public and authenticated API tests, using Jest for testing and Axios for HTTP requests. 
+
+# 📌 Prerequisites
+   
+   Node.js >= 18
+
+   A Spotify Developer account and registered app: https://developer.spotify.com/dashboard
+
+
 
 ## 📁 Project Structure
 
-api_automation/ ├── tests/ │ └── publicApi.test.js # Jest test suite for public/authenticated endpoints ├── utils/ │ ├── auth.js # Handles Spotify auth token via Authorization Code Flow │ ├── config.js # Loads and exports env config variables │ └── publicApi.js # API wrappers for various Spotify endpoints ├── .env # Environment variables (not committed) ├── babel.config.js # Babel config (for Jest ESM support) ├── auth-url.js # Generates authorization URL (manual step) ├── package.json └── README.md
+spotify-api-automation/
+│
+├── tests/                   
+│   └── publicApi.test.js     
+│
+├── utils/                   
+│   ├── auth.js               
+│   └── config.js             
+│
+├── .banelrc
+├── .env 
+├── auth-url.js
+├── jest.config.js            
+├── package.json              
+└── README.md                
+
 
 ## 🚀 Getting Started
 
@@ -28,8 +51,7 @@ npm install
 
 ### 3. **Configure environment**
 
-** create a .env file in the root directory **
-** add this code in the .env file **
+ create a .env file in the root directory and  add this code in it .
 
 ```bash
 
@@ -39,3 +61,6 @@ SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
 SPOTIFY_AUTH_CODE=your_one_time_authorization_code
 
 ```
+#### Remarque 
+
+You get the  SPOTIFY_CLIENT_ID and  SPOTIFY_CLIENT_SECRET   from  your spotify devlopper dashboard  
