@@ -1,6 +1,6 @@
 import { describe, test, expect } from '@jest/globals';
 import request from 'supertest';
-import APIController from './../utils/auth.js';
+import APIController from '../utils/auth.js';
 
 describe('acess need authentification tests', () => {
   const baseURL = 'https://api.spotify.com';
