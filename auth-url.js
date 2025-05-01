@@ -1,7 +1,8 @@
-//in this file we will create a function that will return the auth url for the given provider
 
 import dotenv from 'dotenv';
 dotenv.config();
+
+//in this file we will create a function that will return the auth url for the given provider
 
 function generateSpotifyAuthURL() {
     const clientId = process.env.SPOTIFY_CLIENT_ID;

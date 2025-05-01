@@ -1,12 +1,8 @@
 import axios from 'axios';
-import dotenv from 'dotenv';
+import config from './config.js';
 
-dotenv.config();
 
-const clientId = process.env.SPOTIFY_CLIENT_ID;
-const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-const redirectUri = process.env.SPOTIFY_REDIRECT_URI;
-const authCode = process.env.SPOTIFY_AUTH_CODE; // This should be set to the auth code you get from the redirect URL
+const { clientId, clientSecret, redirectUri, authCode } = config;
 
 console.log('Client ID:', clientId);
 console.log('Client Secret:', clientSecret);
@@ -42,14 +38,8 @@ async function getAccessToken(authCode) {
   }
 }
 
-async function getToken() {
-  if (!accessToken) {
-    throw new Error('Access token not set. Call getAccessToken(authCode) first.');
-  }
-  return accessToken;
-}
+
 
 export default {
   getAccessToken,
-  getToken,
 };

@@ -4,12 +4,14 @@ import APIController from './../utils/auth.js';
 
 describe('acess need authentification tests', () => {
   const baseURL = 'https://api.spotify.com';
-  const authCode = process.env.SPOTIFY_AUTH_CODE; //  code in the url from redirect URL after login
-  //CREATE A TOKEN FOR THE AUTH CODE
-  let token;
+  //  code in the url from redirect URL after login
+  const authCode = process.env.SPOTIFY_AUTH_CODE; 
+
+  let token; //CREATE A TOKEN FOR THE AUTH CODE
+
   beforeAll(async () => {
     token = await APIController.getAccessToken(authCode);
-  }, 15000); // ⏱️ 15 seconds timeout
+  }, 100000); // ⏱️ 1 min timeout
 
   // ---------------------- user current profile acess test---------------------------------//
 
@@ -28,6 +30,8 @@ describe('acess need authentification tests', () => {
       .get('/v1/me'); // No auth header
     expect(res.statusCode).toBe(401);
   });
+
+  // ---------------------- get the user plylist ---------------------------------//
 
   describe('GET /v1/me/playlists - User Playlists Endpoint', () => {
     const baseURL = 'https://api.spotify.com';
@@ -51,7 +55,7 @@ describe('acess need authentification tests', () => {
     });
   });
 
-  // set the volume to 50 
+  // ---------------------- set the volum of the current music to 50 ---------------------------------//
 
   test('Should set volume and return 204 for authorized user', async () => {
   const volumePercent = 50;
@@ -65,7 +69,7 @@ describe('acess need authentification tests', () => {
   console.log('Response body:', res.body);
 
   expect(res.statusCode).toBe(204);
-}, 15000); // ⏱️ timeout set to 15 seconds
+}, 100000); // ⏱️ timeout set to 1 min 
 
 
 });
