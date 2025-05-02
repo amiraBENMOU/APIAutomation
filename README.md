@@ -10,6 +10,9 @@ This project automates the testing of Spotify's Web API using Node.js, Axios, an
 | 📂 Get User's Playlists                                                   | Retrieve playlists of the current user                                      | Valid Access Token                               |
 | 🔊 Set Volume to 50%                                                      | Change playback volume for the current user                                 | Valid Access Token, Active Playback              |
 
+# [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/amiraBENMOU/your-repo) Executing the tests within GitHub Actions
+
+This project use Spotify’s Authorization Code Flow that requires user interaction (manual copy-paste of the auth code), which is not ideal for full automation. A better option for CI would be using the Client Credentials Flow (if your tests don’t need user-specific data) .
 
 # 📌 Prerequisites
    
