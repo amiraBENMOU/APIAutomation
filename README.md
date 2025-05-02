@@ -26,7 +26,7 @@ This project automates the testing of Spotify's Web API using Node.js, Axios, an
 
 ## ⚠️ Remarques
 
-If you don't have a Spotify account, you can comment out or remove the "Get the user playlist" and "Set volume" tests in publicApi.test.js
+If you don't have a Spotify premuim account, you can comment out or remove the "Set volume" tests in publicApi.test.js
 
 
 
