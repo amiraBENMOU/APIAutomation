@@ -4,9 +4,9 @@ This project is a Node.js-based test automation suite that interacts with the Sp
 
 # 📋Test Cases proposed
 
-| Test Case                                                                 | Description                                                                 | Requirements                                      |
+ Test Case                                                                 | Description                                                                 | Requirements                                      |
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------|
-| 🧑‍💼 Get Current User Profile                                              | Fetch information about the currently authenticated user                    | Valid Access Token                               |
+| 🧑‍💼 Get Current User Profile                                            | acess to the  the currently authenticated user                             | Valid  Acess Token                            |
 | 📂 Get User's Playlists                                                   | Retrieve playlists of the current user                                      | Valid Access Token                               |
 | 🔊 Set Volume to 50%                                                      | Change playback volume for the current user                                 | Valid Access Token, Active Playback              |
 
