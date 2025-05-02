@@ -17,7 +17,7 @@ This project is a Node.js-based test automation suite that interacts with the Sp
 
 ## ⚠️ Remarques
 
-if you don't have a spotify accout you can the "get the user plylist " and the " set the volum of the current music to 50 " in publicApi.test.js as comment or simply remove it 
+If you don't have a Spotify account, you can comment out or remove the "Get the user playlist" and "Set volume" tests in publicApi.test.js
 
 
 
