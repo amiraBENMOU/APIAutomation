@@ -1,6 +1,6 @@
 # 🎧 Spotify API Automation Project
 
-This project is a Node.js-based test automation suite that interacts with the Spotify Web API using the Authorization Code Flow. It includes public and authenticated API tests, using Jest for testing and Axios for HTTP requests. 
+This project automates the testing of Spotify's Web API using Node.js, Axios, and Jest. It covers  authenticated endpoints (like fetching user playlists or adjusting playback volume). Authentication is handled using Spotify’s Authorization Code Flow, and the test suite ensures that API requests are functioning correctly with expected responses. This solution is useful for validating API behaviors and  learning OAuth.
 
 # 📋Test Cases proposed
 
