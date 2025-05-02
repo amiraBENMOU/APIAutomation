@@ -111,6 +111,15 @@ the link you get will be something like : https://accounts.spotify.com/authorize
 
 Copy the code after " code = " and past in SPOTIFY_AUTH_CODE in the .env 
 
+###⚠️ Remarque
+The authentification code is valid only for 1 hour so make sure to use it quickly or you shoud rerun the command : 
+
+```bash
+
+npm run auth
+
+```
+
 4 - before starting your tests select any song in your spotify and make it run with low volume 
 to see the difference when we test 
 
