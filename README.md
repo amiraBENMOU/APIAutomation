@@ -2,6 +2,15 @@
 
 This project is a Node.js-based test automation suite that interacts with the Spotify Web API using the Authorization Code Flow. It includes public and authenticated API tests, using Jest for testing and Axios for HTTP requests. 
 
+# 📋Test Cases proposed
+
+| Test Case                                                                 | Description                                                                 | Requirements                                      |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------|
+| 🧑‍💼 Get Current User Profile                                              | Fetch information about the currently authenticated user                    | Valid Access Token                               |
+| 📂 Get User's Playlists                                                   | Retrieve playlists of the current user                                      | Valid Access Token                               |
+| 🔊 Set Volume to 50%                                                      | Change playback volume for the current user                                 | Valid Access Token, Active Playback              |
+
+
 # 📌 Prerequisites
    
   -  Node.js >= 18
