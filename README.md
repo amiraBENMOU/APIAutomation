@@ -142,7 +142,7 @@ If everything works well you will get this kind of result
 - [Public Apis](https://github.com/public-apis/public-apis?tab=readme-ov-file)
 - [Spotify](https://open.spotify.com/intl-fr)
 - [Spotify for devloppers](https://developer.spotify.com/)
-- [meduim | API testing using SuperTest](https://developer.spotify.com/)
+- [meduim | API testing using SuperTest](https://medium.com/@iamfaisalkhatri/api-testing-using-supertest-ea37522fa329)
 - [Spotify Community| How do i get an access token in javascript?](https://community.spotify.com/t5/Spotify-for-Developers/How-do-i-get-an-access-token-in-javascript/td-p/5594298)
 - [youtub | How to use Spotify's Web API 🔥 with Javascript | Javascript API Project](https://www.youtube.com/watch?v=0dmS0He_czs)
 - [GITHUB |Spotify Web API Examples](https://github.com/spotify/web-api-examples/tree/master)
